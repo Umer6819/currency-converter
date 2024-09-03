@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #0D7C66;
+            color: #41B3A2;
+        }
+        .converter-form {
+            max-width: 400px;
+            padding: 20px;
+            margin: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color:#41B3A2 ;
+            font-size: 16px;
+            color:#0D7C66 ;
+        }
+        button:hover {
+            background-color: #0D7C66;
+            color:#41B3A2 ;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Currency Converter</h1>
+    <form class="converter-form" action="submit" method="post">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" placeholder="Enter amount" required>
+
+        <label for="from_currency">From:</label>
+        <select id="from_currency" name="from_currency" required>
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+            <option value="AUD">AUD - Australian Dollar</option>
+<option value="CAD">CAD - Canadian Dollar</option>
+<option value="CHF">CHF - Swiss Franc</option>
+<option value="CNY">CNY - Chinese Yuan</option>
+<option value="SEK">SEK - Swedish Krona</option>
+<option value="NZD">NZD - New Zealand Dollar</option>
+<option value="MXN">MXN - Mexican Peso</option>
+<option value="SGD">SGD - Singapore Dollar</option>
+<option value="HKD">HKD - Hong Kong Dollar</option>
+<option value="NOK">NOK - Norwegian Krone</option>
+<option value="KRW">KRW - South Korean Won</option>
+<option value="TRY">TRY - Turkish Lira</option>
+<option value="INR">INR - Indian Rupee</option>
+<option value="RUB">RUB - Russian Ruble</option>
+<option value="BRL">BRL - Brazilian Real</option>
+<option value="ZAR">ZAR - South African Rand</option>
+<option value="DKK">DKK - Danish Krone</option>
+<option value="PLN">PLN - Polish Zloty</option>
+<option value="THB">THB - Thai Baht</option>
+<option value="IDR">IDR - Indonesian Rupiah</option>
+<option value="HUF">HUF - Hungarian Forint</option>
+<option value="CZK">CZK - Czech Koruna</option>
+<option value="ILS">ILS - Israeli New Shekel</option>
+<option value="CLP">CLP - Chilean Peso</option>
+<option value="PHP">PHP - Philippine Peso</option>
+<option value="AED">AED - United Arab Emirates Dirham</option>
+<option value="COP">COP - Colombian Peso</option>
+<option value="SAR">SAR - Saudi Riyal</option>
+<option value="MYR">MYR - Malaysian Ringgit</option>
+<option value="RON">RON - Romanian Leu</option>
+
+            <!-- Add more currencies as needed -->
+        </select>
+
+        <label for="to_currency">To:</label>
+        <select id="to_currency" name="to_currency" required>
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+            <option value="AUD">AUD - Australian Dollar</option>
+<option value="CAD">CAD - Canadian Dollar</option>
+<option value="CHF">CHF - Swiss Franc</option>
+<option value="CNY">CNY - Chinese Yuan</option>
+<option value="SEK">SEK - Swedish Krona</option>
+<option value="NZD">NZD - New Zealand Dollar</option>
+<option value="MXN">MXN - Mexican Peso</option>
+<option value="SGD">SGD - Singapore Dollar</option>
+<option value="HKD">HKD - Hong Kong Dollar</option>
+<option value="NOK">NOK - Norwegian Krone</option>
+<option value="KRW">KRW - South Korean Won</option>
+<option value="TRY">TRY - Turkish Lira</option>
+<option value="INR">INR - Indian Rupee</option>
+<option value="RUB">RUB - Russian Ruble</option>
+<option value="BRL">BRL - Brazilian Real</option>
+<option value="ZAR">ZAR - South African Rand</option>
+<option value="DKK">DKK - Danish Krone</option>
+<option value="PLN">PLN - Polish Zloty</option>
+<option value="THB">THB - Thai Baht</option>
+<option value="IDR">IDR - Indonesian Rupiah</option>
+<option value="HUF">HUF - Hungarian Forint</option>
+<option value="CZK">CZK - Czech Koruna</option>
+<option value="ILS">ILS - Israeli New Shekel</option>
+<option value="CLP">CLP - Chilean Peso</option>
+<option value="PHP">PHP - Philippine Peso</option>
+<option value="AED">AED - United Arab Emirates Dirham</option>
+<option value="COP">COP - Colombian Peso</option>
+<option value="SAR">SAR - Saudi Riyal</option>
+<option value="MYR">MYR - Malaysian Ringgit</option>
+<option value="RON">RON - Romanian Leu</option>
+
+            <!-- Add more currencies as needed -->
+        </select>
+
+        <button type="submit">Convert</button>
+    </form>
+
+</body>
+</html>

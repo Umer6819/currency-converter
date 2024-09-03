@@ -1,0 +1,43 @@
+<style>
+    .result{
+        max-width: 400px;
+            margin: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #BDE8CA;
+    }
+    button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color:#41B3A2 ;
+            font-size: 16px;
+            color:#0D7C66 ;
+        }
+        button:hover {
+            background-color: #0D7C66;
+            color:#41B3A2 ;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+            background-color: #0D7C66;
+            color: #41B3A2;
+        }
+        
+</style>
+<h1>Currency Converter</h1>
+<div class="result">
+<h3><%= Amount %><%= From %>=<%= ConvertedAmount %><%= To %></h3>
+<hr>
+<h3>1<%= From %>=<%= Rate %><%= To %></h3>
+<hr>
+<h3>1<%= To %>=<%= (1 / Rate).toFixed(4) %><%= From %></h3>
+<form action="return" method="get">
+    <button>Return</button>
+</form>
+</div>
